@@ -1,0 +1,25 @@
+--Create a grocery store database
+
+CREATE TABLE bike_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, purchase_year INTEGER, salesperson_name TEXT);
+
+INSERT INTO bike_store VALUES (1, "Rad Helmet", 5.00, 2005, "Ricky");
+INSERT INTO bike_store VALUES (2, "Rad Bike", 55.00, 2005, "Ricky");
+INSERT INTO bike_store VALUES (3, "Rad Pump", 2.00, 2005, "Ricky");
+INSERT INTO bike_store VALUES (4, "Rad Helmet", 5.00, 2006, "Jimmy");
+INSERT INTO bike_store VALUES (5, "Rad Bike", 55.00, 2006, "Jimmy");
+INSERT INTO bike_store VALUES (6, "Awesome Helmet", 15.00, 2006, "Julio");
+INSERT INTO bike_store VALUES (7, "Awesome Bike", 105.00, 2006, "Julio");
+INSERT INTO bike_store VALUES (8, "Rad Helmet", 5.00, 2006, "Ricky");
+INSERT INTO bike_store VALUES (9, "Rad Bike", 55.00, 2006, "Ricky");
+INSERT INTO bike_store VALUES (10, "The Maxi Pump", 25.00, 2006, "Jeremiah");
+INSERT INTO bike_store VALUES (11, "Best Bike", 255.00, 2006, "Jeremiah");
+INSERT INTO bike_store VALUES (12, "Best Helmet", 85.00, 2007, "Jeremiah");
+INSERT INTO bike_store VALUES (13, "Rad Helmet", 5.00, 2007, "Ricky");
+INSERT INTO bike_store VALUES (14, "Rad Helmet", 5.00, 2007, "Ricky");
+INSERT INTO bike_store VALUES (15, "Rad Helmet", 5.00, 2007, "Ricky");
+
+--display the database in order by price.
+SELECT * FROM bike_store ORDER BY price;
+
+--display the database in order by price with the item name added.
+SELECT price, name FROM bike_store ORDER BY price;
